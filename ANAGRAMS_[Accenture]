@@ -1,0 +1,15 @@
+s1=input()
+s2=input()
+
+def ss(s1,s2):
+    k=0
+    for i in s1:
+        if s1.count(i)==s2.count(i):
+            k+=1
+    if(k==len(s1)):
+        return True
+        
+if((set(s1)==set(s2)) and  ss(s1,s2)):
+    print("yes")
+else:
+    print("no")
