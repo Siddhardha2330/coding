@@ -1,0 +1,7 @@
+s=input()
+se=set(s)
+l=len(se)
+if(l<1):
+    print("-1")
+else:
+    print(l)
