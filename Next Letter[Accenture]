@@ -1,0 +1,5 @@
+s1=input()
+s2=input()
+d=ord(s2)-ord(s1)
+l=(ord(s2)-ord('a')+d)%26+ord('a')  
+print(chr(l))
