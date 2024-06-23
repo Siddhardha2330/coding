@@ -1,0 +1,21 @@
+try:
+    s = input().lower()
+
+
+    length = len(s)
+
+
+    def repeats_after_half(s):
+        half_length = length // 2
+        if length % 2 == 0:
+            return s[:half_length] == s[half_length:]
+        else:
+            return s[:half_length] == s[half_length+1:]
+
+
+    if repeats_after_half(s):
+        print("YES")
+    else:
+        print("NO")
+except EOFError:
+    pass
