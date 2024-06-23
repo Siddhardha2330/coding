@@ -1,0 +1,7 @@
+l=[int(i) for i in input().split(" ")]
+n=int(input())
+h=[i for i in l if i!=0]
+
+for i in range(l.count(0)):
+    h.append(0)
+print(' '.join(str(i) for i in h))
