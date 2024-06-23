@@ -1,0 +1,7 @@
+s=input()
+l=""
+for i in s:
+    if((s.count(i)>1 and l.count(i)==0) or (s.count(i)==1 and l.count(i)==0)):
+        l+=i
+    
+print(l)
