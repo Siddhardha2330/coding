@@ -1,0 +1,12 @@
+n=int(input())
+l=[int(i) for i in input().split(" ")]
+def gcd(a,b):
+    while b:
+        a,b=b,a%b
+    return a
+def hcf(arr):
+    hcf=arr[0]
+    for i in range(1,n):
+        hcf=gcd(hcf,arr[i])
+    return hcf
+print(hcf(l))
